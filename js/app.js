@@ -22,7 +22,7 @@ const showProducts = (products) => {
       <p>Rating- ${product.rating.rate}</p>
       <p>Rating Count- ${product.rating.count}</p>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
-      <button id="details-btn" class="btn btn-danger">Details</button></div>
+      <button onclick="getAsingle(${product.title})" id="details-btn" class="btn btn-danger">Details</button></div>
       `;
     document.getElementById("all-products").appendChild(div);
   }
@@ -82,3 +82,6 @@ const updateTotal = () => {
   document.getElementById("total").innerText = Math.round(grandTotal * 100) / 100;
 }
 loadProducts();
+
+
+

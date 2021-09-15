@@ -2,6 +2,14 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+.title-name{
+  font-size:80px;
+  font-weight: bold;
+}
+.single-name{
+  color:rgb(233, 155, 77);
+  font-style: italic;
+}
 .search-field {
   border: none;
   border-radius: 50px;
@@ -20,10 +28,15 @@ body {
   margin-top: 50px;
   border-right: none;
 }
+.search-box:hover{
+  border-color: darkseagreen;
+}
+
 .search-button {
   padding: 10px 50px;
   border-radius: 25px;
-  margin-left: 20px;
+  margin-left: 25px;
+  color: aquamarine;
 }
 #all-products {
   display: grid;
